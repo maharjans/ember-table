@@ -57,7 +57,7 @@ class LegacyStickyPolyfill {
     }
   }
 
-  positionStickyElements = () => {
+  positionStickyElements() {
     let thead = this.header;
     let tfoot = this.footer;
 
@@ -81,7 +81,7 @@ class LegacyStickyPolyfill {
     for (let cell of leftColumn) {
       cell.style.transform = `translateX(${scrollLeft}px)`;
     }
-  };
+  }
 }
 
 export function setupLegacyStickyPolyfill(element) {
